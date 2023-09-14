@@ -3,7 +3,8 @@ import React from 'react'
 export default class Form extends React.Component {
   render() {
     
-    return <>
+    return (
+    <>
       <form id='todoForm' onSubmit={this.props.onTodoFormSubmit}>
         <input
           value={this.props.todoNameInput}
@@ -20,5 +21,6 @@ export default class Form extends React.Component {
         {this.props.displayCompleteds ? 'Hide' : 'Show'} Completed
       </button>
     </>
+    )
   }
 }
